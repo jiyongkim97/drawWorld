@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>draw</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="colore-options">
+    <input type="color" id="color">
+    <div class="color-option" style="background-color:   #1abc9c;" data-color="#1abc9c"></div>
+    <div class="color-option" style="background-color:   #2ecc71;" data-color="#2ecc71"></div>
+    <div class="color-option" style="background-color:   #3498db;" data-color="#3498db"></div>
+    <div class="color-option" style="background-color:   #9b59b6;" data-color="#9b59b6"></div>
+    <div class="color-option" style="background-color:   #34495e;" data-color="#34495e"></div>
+    <div class="color-option" style="background-color:   #16a085;" data-color="#16a085"></div>
+    <div class="color-option" style="background-color:   #16a085;" data-color="#16a085"></div>
+    <div class="color-option" style="background-color:   #e74c3c;" data-color="#e74c3c"></div>
+    <div class="color-option" style="background-color:   #16a085;" data-color="#16a085"></div>
+  </div>
+  <canvas></canvas>
+
+
+  <div class="btn">
+    <label for="line-width">hello</label>
+    <input id="line-width" type="range" min="1" max="10" value="5" step="0.5">
+    <button id="mode-btn">fill</button>
+    <button id="mode-destroy">destroy</button>
+    <button id="mode-erase">erase</button>
+    <button id="language-change">한영전환</button>
+    <label for="file">
+      Add Photo
+      <input type="file" accept="image/*" id="file" /></label>
+    <input type="text" placeholder="write and then double click" id="text" />
+    <button id="save">save image</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
